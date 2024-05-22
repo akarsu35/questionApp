@@ -21,7 +21,7 @@ export default function TimeCount({ questionIndex }) {
 
   // questionIndex değeri değiştiğinde count'u sıfırla
   useEffect(() => {
-    setCount(30)
+    setCount(INITIAL_TIME)
   }, [questionIndex])
 
   return (

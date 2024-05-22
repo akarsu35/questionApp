@@ -19,10 +19,11 @@ export default function Question({
   setWrongQuestions,
 }) {
   // soruların seçenekleri 10 sn sonra açılacak
+  const INITIAL_TIMER =10000
   useEffect(() => {
     const timer = setInterval(() => {
       setIsOptionsOpen(true)
-    }, 10000)
+    }, INITIAL_TIMER)
 
     return () => {
       clearInterval(timer)
